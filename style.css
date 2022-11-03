@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+picture img {
+  width: 100%;
+  display: inherit;
+}
+.card-heading p.heading {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.card-heading {
+  max-width: 600px;
+  padding: 30px;
+}
+.card-heading p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 16px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  line-height: 1.6;
+}
+.card-heading h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.card-heading h2 {
+  font-family: "Fraunces", serif;
+  padding-bottom: 16px;
+  line-height: 1;
+  font-size: 46px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  max-width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+p.current-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+}
+p.old-price {
+  text-decoration: line-through;
+}
+main {
+  display: grid;
+  background-color: hsl(0, 0%, 100%);
+}
+button {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: hsl(159, 93%, 11%);
+}
+.amount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 12%, 48%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 640px) {
+  .card {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+}
